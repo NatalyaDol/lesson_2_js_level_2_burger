@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Hamburger</title>
+
+</head>
+<body>
+    <main>
+        <form action="">
+            <h1>Приготовь себе бутерброд</h1>
+            <h2>Как сильно ты голоден?</h2>
+            <input class="checked" type="radio" name="size" value="big" data-id="big" id="sizeChoiceBig" onclick="checkedSize(0)"> Big
+            <input class="checked" type="radio" name="size" value="small" data-id="small" id="sizeChoiceSmall" onclick="checkedSize(1)"> Small
+            <p id="size__sum"></p>
+            <span id="size__cal"></span>
+            
+            <h2>Как насчет начинок</h2>
+            <input class="checked" type="checkbox" name="stuffing-cheese" value="cheese" data-id="cheese" onclick="stuffing(0)"> Cheese
+            <p id="size__sum__cheese"></p>
+            <span id="size__cal__cheese"></span>
+            
+            <input class="checked" type="checkbox" name="stuffing-salad" value="salad" data-id="salad" onclick="stuffing(1)"> salad 
+            <p id="size__sum__salad"></p>
+            <span id="size__cal__salad"></span>
+
+            <input class="checked" type="checkbox" name="stuffing-potato" value="potato" data-id="potato" onclick="stuffing(2)"> potato 
+            <p id="size__sum__potato"></p>
+            <span id="size__cal__potato"></span>
+
+            
+        </form>
+       
+        <br> <button type="submit" id="btn_input"  >Я выбрал!</button>
+            
+        
+
+        <div class="total">
+            <div id="total__price"></div>
+            <div id="total__cal"></div>
+        </div>
+       
+    </main>
+    
+    <script src="script.js" defer></script>
+</body>
+</html>
